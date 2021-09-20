@@ -23,7 +23,15 @@ router.post("/workouts",(req,res)=> {
 });
 
 // PUT  --  api/workouts -- Update Exersizes
-
+router.put("/workouts/:id",(req,res)=> {
+    db.Workout.findByIdAndUpdate(
+        {_id:req.params.id},{exercises: req.body}
+    ).then((dbWorkout)=>{
+        res.json(dbWorkout);
+    }).catch(err =>{
+        res.status(400).json(err)
+    })
+})
 
 
 module.exports = router;
