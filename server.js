@@ -15,8 +15,14 @@ app.use(express.json());
 app.use(express.static("public"));
 
 //  mongoose connection
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userdb", { useNewUrlParser: true });
-
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userdb",
+     {
+       useNewUrlParser: true,
+       useUnifiedTopology: true,
+       useCreateIndex: true,
+       useFindAndModify: false,
+     }
+   );
 //require routes
 app.use(routes);
 
