@@ -20,8 +20,8 @@ You can view the combined weight of multiple exercises and the total duration on
 For a live deployment: [VIEW LIVE DEPLOYMENT](https://vast-shore-72948.herokuapp.com/?id=614a46b0bb365c00163e685d)
 To run a cloned repository: - In Node, enter 'npm run seed' to seed the database - After seeding, npm run start or navigate to the root and 'Node server.js'.
 
-![Screenshot of Home Route](assets\screenshot1.jpg)
-![Screenshot of Stats Page](assets\screenshot2.jpg)
+![Screenshot of Home Route](assets/screenshot1.jpg)
+![Screenshot of Stats Page](assets/screenshot2.jpg)
 
 ## Walkthrough
 
